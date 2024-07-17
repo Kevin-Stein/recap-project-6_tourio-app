@@ -13,7 +13,7 @@ export default function EditPage() {
 
   async function editPlace(place) {
     const response = await fetch(`/api/places/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
